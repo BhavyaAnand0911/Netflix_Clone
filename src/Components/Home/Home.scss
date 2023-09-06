@@ -1,0 +1,31 @@
+$bg: rgb(14, 14, 14);
+.banner{
+    height: 500px;
+    background-color: $bg;
+}
+.row{
+
+        background-color: $bg;  
+    >h2{
+        color:white;
+        font-weight: 400;
+        margin-left: 20px;
+    }
+    >div{
+        display: flex;
+        overflow-x: auto;
+        padding: 10px;
+        justify-content: center;
+    }
+}
+.card{
+    width: 200px;
+    cursor: pointer;
+    margin: 0.5rem;
+
+    //This is the use of transition property of CSS
+    transition: transform 0.5s;
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
